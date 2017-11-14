@@ -1,5 +1,5 @@
 
-package model;
+package FunctionLayer;
 
 
 public class WoodAndRoof {
@@ -9,10 +9,10 @@ public class WoodAndRoof {
     private String unit;
     private String description;
     
-    public WoodAndRoof(String name, int length, String unit, String description){
+    public WoodAndRoof(String name, int length, int amount, String unit, String description){
         this.name = name;
         this.length = length;
-       // this.amount = amount;
+        this.amount = amount;
         this.unit = unit;
         this.description = description;
     }
