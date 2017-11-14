@@ -21,7 +21,7 @@ public class MaterialMapper {
         try {
             
             Connection con = Connector.connection();
-            String SQL = "SELECT * FROM WoodAndRoof";
+            String SQL = "SELECT * FROM woodandroof";
             PreparedStatement ps = con.prepareStatement(SQL);
             ResultSet rs = ps.executeQuery();
             
