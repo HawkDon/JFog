@@ -8,7 +8,7 @@ package FunctionLayer;
 /**
  * @author PC
  */
-public class Calculator {
+public class SingleFlatRoofCal {
     
     
 }

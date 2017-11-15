@@ -36,11 +36,11 @@ insert into `useradmin`(`id`, `email`, `password`) values
 
 DROP TABLE IF EXISTS `woodandroof`;
 CREATE TABLE `woodandroof` (
-	`name` varchar(90) NOT NULL,
+    `name` varchar(90) NOT NULL,
     `length` int(30) NOT NULL,
     `amount` int(30) NOT NULL,
     `unit` varchar(90) NOT NULL,
-	`description` varchar(90) NOT NULL
+    `description` varchar(90) NOT NULL
 -- PRIMARY KEY (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
@@ -66,23 +66,24 @@ insert into `woodandroof`(`name`, `length`, `amount`, `unit`, `description`) val
 
 DROP TABLE IF EXISTS `fittingandscrews`;
 CREATE TABLE `fittingandscrews` (
-	`name` varchar(90) NOT NULL,
+    `name` varchar(90) NOT NULL,
+    `amount` int(30) NOT NULL,
     `unit` varchar(90) NOT NULL,
-	`description` varchar(90) NOT NULL,
+    `description` varchar(90) NOT NULL,
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
-insert into `fittingandscrews`(`name`, `unit`, `description`) values 
-('plastmo bundskruer 200 stk', 'Pakke', 'Skruer til tagplader'),
-('hulbånd 1x20 mm. 10 mtr.', 'Rulle', 'Til vindkryds på spær'),
-('universal 190 mm. højre', 'Stk', 'Til montering af spær på rem'),
-('universal 190 mm. venstre', 'Stk', 'Til montering af spær på rem'),
-('4,5 x 60 mm. skruer 200stk.', 'Pakke', 'Til montering af stern&vandbrædt'),
-('4,0 x 50 mm. beslagskruer 250 stk.', 'Pakke', 'Til montering af universalbeslag + hulbånd'),
-('bræddebolt 10 x 120 mm.', 'Stk', 'Til montering af rem på stolper'),
-('firkantskiver 40x40x11 mm.', 'Stk', 'Til montyering af rem på stolper'),
-('4,5 x 70 mm. Skruer 400 stk.', 'Pakke', 'Til montering af yderste beklædning'),
-('4,5 x 50 mm. Skruer 300 stk.', 'Pakke', 'Til montering af inderste beklædning'),
-('stalddørsgreb 50x75', 'Sæt', 'Til lås på dør i skur'),
-('t hængsel 390 mm', 'Stk', 'Til skurdør'),
-('vinkelbeslag 35', 'Stk', 'Til montering af løsholter i skur');
+insert into `fittingandscrews`(`name`, `amount`, `unit`, `description`) values 
+('plastmo bundskruer 200 stk', 0, 'Pakke', 'Skruer til tagplader'),
+('hulbånd 1x20 mm. 10 mtr.', 0, 'Rulle', 'Til vindkryds på spær'),
+('universal 190 mm. højre', 0, 'Stk', 'Til montering af spær på rem'),
+('universal 190 mm. venstre', 0, 'Stk', 'Til montering af spær på rem'),
+('4,5 x 60 mm. skruer 200stk.', 0, 'Pakke', 'Til montering af stern&vandbrædt'),
+('4,0 x 50 mm. beslagskruer 250 stk.', 0, 'Pakke', 'Til montering af universalbeslag + hulbånd'),
+('bræddebolt 10 x 120 mm.', 'Stk', 0, 'Til montering af rem på stolper'),
+('firkantskiver 40x40x11 mm.', 0, 'Stk', 'Til montyering af rem på stolper'),
+('4,5 x 70 mm. Skruer 400 stk.', 0, 'Pakke', 'Til montering af yderste beklædning'),
+('4,5 x 50 mm. Skruer 300 stk.', 0, 'Pakke', 'Til montering af inderste beklædning'),
+('stalddørsgreb 50x75', 'Sæt', 0, 'Til lås på dør i skur'),
+('t hængsel 390 mm', 'Stk', 0, 'Til skurdør'),
+('vinkelbeslag 35', 'Stk', 0, 'Til montering af løsholter i skur');
